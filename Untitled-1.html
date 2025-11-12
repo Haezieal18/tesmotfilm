@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Trangchu2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<link type="text/css" rel="stylesheet" href="../../bootstrap-5.3.8-dist/css/bootstrap.min.css"/>
+<script type="text/javascript" src="../../bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	
+	<style>
+    /* Hover để mở dropdown */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0; /* loại bỏ khoảng cách nhảy */
+    }
+	.navbar-nav {
+  	width: 100%;
+  	justify-content: space-between; /* hoặc space-around để có khoảng cách đều hơn */
+	}
+	.banner {
+	width: 100%;
+	height: 150px; /* hoặc chiều cao bạn muốn */
+	background-image: url("../img/banner/TOP2.png"); /* thay bằng ảnh của bạn */
+	background-size: cover;       /* tự phóng/thu để phủ kín */
+	background-position: center;  /* canh giữa */
+	background-repeat: no-repeat; /* không lặp ảnh */
+	}
+	.body, .html {
+	margin: 0;
+	padding: 0;
+	}
+  	</style>
+
+<!--color_css-->
+<link rel="stylesheet" type="text/css" href="../css/color.css">
+
+<!--my_style_css-->
+<link rel="stylesheet" type="text/css" href="../css/my_style.css">
+<link rel="stylesheet" href="../css/timkiem.css">
+	
+<!--icon web-->
+<link rel="icon" href="../icon/iconweb.svg" type="image/x-icon">
+</head>
+	
+
+<body>
+<div class="banner">
+	<div class="container-lg">
+		<div class="row">
+			<a href="#" class="col-lg-3 col-md-4 col-sm-5 col-6">
+				<img src="../icon/LOGO_ICON_TEXT.svg" alt="..." class="mt-5"/>
+			</a>
+			<div class="col-lg-9 col-md-8 col-sm-7 col-6 mt-5 d-flex justify-content-end">
+				<div class="d-flex align-items-center gap-2">
+						<!-- Timkiem -->
+						<button type="button" class="btn btn-primary my-custom-btn-blue border-0" data-bs-toggle="modal" data-bs-target="#exampleModal">
+						<i class="bi bi-search me-2">
+						</i>
+						<span class="btn-sm d-none d-md-inline">Tìm Kiếm</span>
+						</button>
+
+						<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="giohang.html">
+							<i class="bi bi-capsule pe-1">
+
+							</i>
+							<span class="btn-sm d-none d-md-inline">Giỏ thuốc</span>
+							<span class="position-absolute rounded-pill translate-middle bg-danger ps-2 pe-2 ms-2 ps-ms-1 pe-ms-1 ms-2" style="font-size: 12px">
+							69
+							<span class="visually-hidden">unread messages</span>
+							</span>
+						</a>
+
+						<a class="btn btn-primary my-custom-btn-blue border-0 my-text-light" href="login.html"> 
+								<i class="bi bi-person-fill pe-1"></i>
+								<span class="btn-sm d-none d-md-inline">Đăng nhập</span>
+						</a>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+	
+</div>
+
+	
+	
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #e3f2fd;" data-bs-theme="light">
+  <div class="container-lg">
+    <!-- Nút bật menu khi thu nhỏ -->
+    <button class="navbar-toggler border-0 d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <h1 class="m-0"><i class="bi bi-justify my-text-blue"></i></h1>
+    </button>
+	  
+<!--
+	<button class="navbar-toggler border-0 ms-auto me-2 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbartc" aria-controls="navbartc" aria-expanded="false" aria-label="Toggle navigation">
+				<h1 class="m-0"><i class="bi bi-justify my-text-light"></i></h1>
+	</button>
+-->
+
+    <!-- Menu dạng trượt ngang -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <img src="../icon/Log2.svg" alt="logo" style="height: 50px;"/>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-between flex-grow-1 pe-3">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Thực phẩm chức năng
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dược mỹ phẩm
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Thuốc
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chăm sóc cá nhân
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Thiết bị y tế
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tiêm chủng
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Bệnh &amp; Góc sức khỏe
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+	
+<div id="carouselBackground">
+	<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    	<div class="carousel-inner">
+			<div class="carousel-item active" data-bg="url('../img/BANNERFinal/BG_1.png')">
+				<img src="../img/BANNERFinal/Banner_1_02.png" class="d-block mx-auto my-auto position-absolute start-50 translate-middle" alt="Slide 1" style="max-width: 100%; height: auto; top: 140px;">
+			</div>
+			<div class="carousel-item" data-bg="url('../img/BANNERFinal/BG_2.png')">
+				<img src="../img/BANNERFinal/Banner_2_02.png" class="d-block mx-auto my-auto position-absolute start-50 translate-middle" alt="Slide 2" style="max-width: 100%; height: auto; top: 140px;">
+			</div>
+			<div class="carousel-item" data-bg="url('../img/BANNERFinal/BG_3.png')">
+				<img src="../img/BANNERFinal/Banner_3_02.png" class="d-block mx-auto my-auto position-absolute start-50 translate-middle" alt="Slide 3" style="max-width: 100%; height: auto; top: 140px;">
+			</div>
+    	</div>
+
+		<button class="carousel-control-prev d-none d-md-block" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      		<h1><i class="bi bi-arrow-left-circle-fill"></i></h1>
+		</button>
+		<button class="carousel-control-next d-none d-md-block" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+			<h1><i class="bi bi-arrow-right-circle-fill"></i></h1>
+		</button>
+    </div>
+</div>
+	
+
+<!-- Modal_timkiem -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content mt-5 modal-dialog">
+	<!--
+						  <div class="modal-header">
+							<h1 class="modal-title fs-5" id="exampleModalLabel">
+
+							</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						  </div>
+	-->
+						  	<div class="modal-body">
+								<div class="search-box">
+									<input type="text" class="form-control" placeholder="Tìm theo tên thuốc, bệnh..." id="searchInput">
+									<div class="search-results mt-2 d-none" id="searchResults">
+										<div class="p-3 border-bottom">
+											<strong><i class="bi bi-clock-history me-2"></i>Lịch sử tìm kiếm</strong>
+										</div>
+										<ul class="list-group list-group-flush">
+											<li class="list-group-item">Omega 3</li>
+											<li class="list-group-item">Vitamin E</li>
+											<li class="list-group-item">Kem chống nắng</li>
+											<li class="list-group-item">Men vi sinh</li>
+											<li class="list-group-item">Bao cao su</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+<script src="../js/timkiem.js"></script>
+<script src="../js/my_style.js"></script>
+</body>
+</html>
